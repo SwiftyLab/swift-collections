@@ -1,2 +1,3 @@
-# swift-collections
-CocoaPods specs for Apple's [SwiftCollection](https://github.com/apple/swift-collections).
+# SwiftCollections
+
+Unofficial CocoaPods pod for the [swift-collections](https://github.com/apple/swift-collections) library.
