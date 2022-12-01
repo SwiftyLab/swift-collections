@@ -16,7 +16,7 @@
   },
   "private": true,
   "dependencies": {
-    "fs-extra": "^10.1.0",
+    "fs-extra": "^11.1.0",
     "swiftylab-ci": "github:SwiftyLab/ci"
   },
   "scripts": {
