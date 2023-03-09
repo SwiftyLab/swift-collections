@@ -36,7 +36,7 @@ module SwiftCollections
       self.osx.deployment_target     = '10.9'
 
       if has_files
-        self.source_files = "Sources/#{self.name}/**/*.swift", "Sources/#{self.name}/*.docc"
+        self.source_files = "Sources/#{self.module_name}/**/*.swift", "Sources/#{self.module_name}/**/*.docc/*.*"
       end
     end
   end

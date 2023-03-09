@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
 
   s.default_subspec = 'Collections'
   s.subspec 'Collections' do |ss|
-    ss.dependency 'Collections', "= #{s.version}"
+    ss.dependency 'CollectionsLib', "= #{s.version}"
   end
 
   s.subspec 'DequeModule' do |ss|

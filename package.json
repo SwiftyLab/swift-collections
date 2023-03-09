@@ -1,6 +1,6 @@
 {
   "name": "SwiftCollections",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "summary": "Swift Collections is an open-source package of data structure implementations for the Swift programming language.",
   "description": "Unofficial pod for the swift-collections library.",
   "homepage": "https://github.com/apple/swift-collections",
@@ -21,6 +21,7 @@
   },
   "scripts": {
     "prepare": "node utils/setup.js",
+    "push": "node utils/push.js",
     "pod-lint": "npm exec --package=swiftylab-ci -- pod-lint.js"
   }
 }

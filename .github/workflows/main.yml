@@ -16,3 +16,9 @@ jobs:
   cocoapods-test:
     name: CocoaPods
     uses: SwiftyLab/ci/.github/workflows/cocoapods.yml@main
+    strategy:
+      matrix:
+        platforms: ['macos', 'ios', 'tvos']
+        # platforms: ['macos tvos', 'ios', 'watchos']
+    with:
+      platforms: ${{ matrix.platforms }}

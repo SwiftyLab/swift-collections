@@ -19,7 +19,7 @@ execSync(command, {
 core.endGroup();
 
 core.startGroup(`Copy source files for swift-collections`);
-['Sources', 'Tests'].forEach( (dir) => {
+['Sources', 'Tests'].forEach((dir) => {
   const source = `${destDir}/${dir}`;
   fs.emptyDirSync(dir);
   fs.copySync(source, dir);
