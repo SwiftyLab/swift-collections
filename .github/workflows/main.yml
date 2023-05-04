@@ -13,6 +13,31 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  analyze:
+    name: Analyze
+    if: github.event_name != 'workflow_dispatch'
+    uses: SwiftyLab/ci/.github/workflows/analyze.yml@swift-codeql
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
+    with:
+      source-root: node_modules/swift-collections
+      matrix: >
+        {
+          "include": [
+            {
+              "os": "ubuntu-latest",
+              "language": "swift",
+              "swift": "5.7"
+            },
+            {
+              "os": "macos-latest",
+              "language": "swift"
+            }
+          ]
+        }
+        
   cocoapods-test:
     name: CocoaPods
     uses: SwiftyLab/ci/.github/workflows/cocoapods.yml@main
