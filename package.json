@@ -16,12 +16,19 @@
   },
   "private": true,
   "dependencies": {
-    "fs-extra": "^11.1.0",
-    "swiftylab-ci": "github:SwiftyLab/ci"
+    "swiftylab-ci": "github:SwiftyLab/ci#swift-codeql"
   },
   "scripts": {
-    "prepare": "node utils/setup.js",
-    "push": "node utils/push.js",
+    "prepare": "npm exec --package=swiftylab-ci -- setup.js",
+    "prepod-push": "npm exec --package=swiftylab-ci -- setup.js",
+    "pod-push": "npm exec --package=swiftylab-ci -- pod-push.js",
     "pod-lint": "npm exec --package=swiftylab-ci -- pod-lint.js"
-  }
+  },
+  "podspecs": [
+    "_CollectionsTestSupport.podspec",
+    "DequeModule.podspec",
+    "OrderedCollections.podspec",
+    "CollectionsLib.podspec",
+    "SwiftyCollections.podspec"
+  ]
 }

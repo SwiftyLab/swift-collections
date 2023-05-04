@@ -22,7 +22,7 @@ jobs:
       contents: read
       security-events: write
     with:
-      source-root: node_modules/swift-collections
+      source-root: node_modules/SwiftCollections
       matrix: >
         {
           "include": [
