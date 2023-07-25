@@ -29,11 +29,11 @@ module SwiftCollections
       }
 
       self.swift_version             = '5.0'
-      self.ios.deployment_target     = '8.0'
-      self.macos.deployment_target   = '10.9'
-      self.tvos.deployment_target    = '9.0'
-      self.watchos.deployment_target = '2.0'
-      self.osx.deployment_target     = '10.9'
+      self.ios.deployment_target     = '11.0'
+      self.macos.deployment_target   = '13.0'
+      self.tvos.deployment_target    = '16.0'
+      self.watchos.deployment_target = '9.0'
+      self.osx.deployment_target     = '13.0'
 
       if has_files
         self.source_files = "Sources/#{self.module_name}/**/*.swift", "Sources/#{self.module_name}/**/*.docc/*.*"
